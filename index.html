@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Personal Information</h2>
+        <form id="userInfo" class="user-info" onsubmit="return false;">
+            <label for="name">Name:</label>
+            <input type="text" id="name" value="Vandu" readonly>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" value="vandu@example.com" readonly>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" value="123-456-7890" readonly>
+
+            <button id="editBtn">Edit</button>
+        </form>
+    </div>
+
+    <!-- Modal for editing information -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Edit Information</h2>
+            <form id="editForm">
+                <label for="editName">Name:</label>
+                <input type="text" id="editName" value="Vandu">
+
+                <label for="editEmail">Email:</label>
+                <input type="email" id="editEmail" value="vandu@example.com">
+
+                <label for="editPhone">Phone:</label>
+                <input type="tel" id="editPhone" value="123-456-7890">
+
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
